@@ -9,6 +9,7 @@ import { AddFlightComponent } from './add-flight/add-flight.component';
 import { FormsModule } from "@angular/forms";
 import { ViewFlightComponent } from './view-flight/view-flight.component';
 import { HttpClientModule,HttpClient } from "@angular/common/http";
+import { SearchComponent } from './search/search.component';
 
 const appRoutes:Routes=[
   {
@@ -16,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"view",component:ViewFlightComponent
+  },
+  {
+    path:"search",component:SearchComponent
   }
 
 ]
@@ -24,7 +28,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     AddFlightComponent,
-    ViewFlightComponent
+    ViewFlightComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
