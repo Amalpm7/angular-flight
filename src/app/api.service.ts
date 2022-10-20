@@ -14,4 +14,7 @@ export class ApiService {
   putData=(data:any)=>{
     return this.http.post("http://localhost:8080/addFlight",data)
   }
+  deleteFlight=(data:any)=>{
+    return this.http.post("http://localhost:8080/deleteflight",data)
+  }
 }
